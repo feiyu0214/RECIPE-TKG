@@ -46,16 +46,22 @@ model/
 Organized into training and evaluation subsets:
 ```bash
 data/
-├── train/
+├── original/
 │   ├── icews14/
 │   ├── icews18/
 │   ├── gdelt/
 │   └── yago/
-├── eval/
-│   ├── icews14/
-│   ├── icews18/
-│   ├── gdelt/
-│   └── yago/
+├── processed/
+│   ├── train/
+│   │   ├── icews14/
+│   │   ├── icews18/
+│   │   ├── gdelt/
+│   │   └── yago/
+│   ├── eval/
+│   │   ├── icews14/
+│   │   ├── icews18/
+│   │   ├── gdelt/
+│   │   └── yago/
 ```
 
 Each dataset subfolder contains files sampled using `rbmh`, `tlr`, or `isi`.
